@@ -1,0 +1,49 @@
+OUTPUT_DIR: ../experiments/model_256_256_256_256/
+T_max: 500
+batch_size: 128
+check_val_every_n_epoch: 999
+checkpoint_every_n_epochs: 1
+ckpt_path: null
+gpu: true
+gpus: -1
+hidden_dims: &id001
+- 256
+- 256
+- 256
+- 256
+hparams:
+  OUTPUT_DIR: ../experiments/model_256_256_256_256/
+  T_max: 500
+  batch_size: 128
+  check_val_every_n_epoch: 999
+  checkpoint_every_n_epochs: 1
+  ckpt_path: null
+  gpu: true
+  gpus: -1
+  hidden_dims: *id001
+  input_dim: 15
+  learning_rate: 0.001
+  logfile_name: train_emulator.log
+  max_epochs: 500
+  norm_path: null
+  num_nodes: 1
+  num_workers: 8
+  optimizer: Adam
+  seed: 13579
+  strategy: ddp
+  train_path: ../data/dataset.h5
+  val_path: ../data/dataset.h5
+  verbose: false
+input_dim: 15
+learning_rate: 0.001
+logfile_name: train_emulator.log
+max_epochs: 500
+norm_path: null
+num_nodes: 1
+num_workers: 8
+optimizer: Adam
+seed: 13579
+strategy: ddp
+train_path: ../data/dataset.h5
+val_path: ../data/dataset.h5
+verbose: false

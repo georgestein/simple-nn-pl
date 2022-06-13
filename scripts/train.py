@@ -120,7 +120,7 @@ def main(args):
 
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
         dirpath=params['OUTPUT_DIR'],
-        filename='{epoch}-{val_loss:.5f}',
+        filename='{epoch}-{train_loss:.7f}',
         every_n_epochs=params['checkpoint_every_n_epochs'],
         save_top_k=-1,
         save_on_train_epoch_end=True,

@@ -1,9 +1,9 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='rsd-emu',
+    name='simple-nn-pl',
     version="0.0",
-    url='http://github.com/gstein/ligo_emulator',
+    url='http://github.com/gstein/simple-nn-pl',
     author="George Stein",
     author_email='george.f.stein@gmail.com',
     packages=find_packages(), 
