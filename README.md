@@ -1,2 +1,3 @@
-# simple-nn-pl
-Barebones MLP classifier and data analysis notebooks in PyTorch-Lightning
+# simple_classifier
+
+Barebones MLP classifier and data analysis notebooks. Uses PyTorch-Lightning
